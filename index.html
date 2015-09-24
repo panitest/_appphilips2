@@ -232,93 +232,51 @@ ns.preguntas_me=[
 ];
 ns.preguntas_mitos=[
 	{//1
-	'pregunta':'mito1',
-	'a':'A mayor cantidad de chips, mayor flujo lumínico',
-	'b':'No hay relación directa entre la cantidad de chips y el flujo lumínico',
-	'corecta':'b'
-	},
-	{//2
-	'pregunta':'mito2',
-	'a':'Reemplazo por una lámpara dicroica MasterLED Philips de 6w, con un AHORRO de ENERGIA del 88%',
-	'b':'Reemplazo por una lámpara dicroica MasterLED Philips de 12w, con un AHORRO de ENERGIA del 76%',
-	'corecta':'b'
-	},
-	{//3
-	'pregunta':'mito3',
-	'a':'Consumo',
-	'b':'Mantenimiento de flujo lumínico',
-	'corecta':'b'
-	},
-	{//4
-	'pregunta':'mito4',
-	'a':'Para luz acentuada con pocas horas de uso',
-	'b':'Para espacios con mucha luz exterior',
-	'corecta':'b'
-	},
-	{//5
-	'pregunta':'mito5',
-	'a':'Mayor que las lámparas de bajo consumo',
-	'b':'Menor que las lámparas de bajo consumo',
-	'corecta':'b'
-	},
-	{//6
-	'pregunta':'mito6',
-	'a':'Un transformador Philips para lámparas LED de 30 watts',
-	'b':'Un transformador Philips para lámparas LED de 10 watts',
-	'corecta':'b'
-	},
-	{//7
-	'pregunta':'mito7',
-	'a':'50.000 veces',
-	'b':'15.000 veces',
-	'corecta':'b'
-	},
-	{//8
-	'pregunta':'mito8',
-	'a':'Sí',
-	'b':'No, tienen 20 mm. más',
-	'corecta':'b'
-	},
-	{//9
-	'pregunta':'mito9',
+	'pregunta':'¿Se contagian los bostezos?',
 	'a':'No',
 	'b':'Sí',
 	'corecta':'b'
 	},
-	{//10
-	'pregunta':'mito10',
-	'a':'Iluminación enfocada',
-	'b':'Alto rendimiento de regulación',
-	'corecta':'b'
-	},
-	{//11
-	'pregunta':'mito11',
+	{//2
+	'pregunta':'¿Caen siempre los gatos de pie?',
 	'a':'No',
-	'b':'Se necesita hacer una pequeña adaptación al artefacto',
+	'b':'Sí',
 	'corecta':'b'
 	},
-	{//12
-	'pregunta':'mito12',
-	'a':'Dicroica 50W',
-	'b':'Incadescente Standard 40W',
+	{//3
+	'pregunta':'Cenar en grandes cantidades produce pesadillas',
+	'a':'No',
+	'b':'Sí',
 	'corecta':'b'
 	},
-	{//13
-	'pregunta':'mito13',
-	'a':'40000 horas',
-	'b':'20000 horas',
-	'corecta':'b'
+	{//4
+	'pregunta':'El huevo rojo o marrón es más nutritivo que el blanco',
+	'a':'No',
+	'b':'Sí',
+	'corecta':'a'
 	},
-	{//14
-	'pregunta':'mito14',
-	'a':'4',
-	'b':'2',
-	'corecta':'b'
+	{//5
+	'pregunta':'Cortarse el pelo hace que después nos crezca más rápido',
+	'a':'No',
+	'b':'Sí',
+	'corecta':'a'
 	},
-	{//15
-	'pregunta':'mito15',
-	'a':'Mejor',
-	'b':'Peor',
+	{//6
+	'pregunta':'Hay que esperar 2 o 3 horas y hacer la digestión para meterse en la pileta',
+	'a':'No',
+	'b':'Sí',
+	'corecta':'a'
+	},
+	{//7
+	'pregunta':'Comer Zanahorias mejora la vista',
+	'a':'No',
+	'b':'Sí',
+	'corecta':'a'
+	},
+	{//8
+	'pregunta':'Un ser humano podría viajar al futuro',
+	'a':'No',
+	'b':'Sí',
 	'corecta':'b'
 	}
 ];
@@ -352,7 +310,7 @@ function getPreguntas(){
 		if(ns.preguntas.length!=1){
 			pa=grupo[getRandomInt(0, 14)];
 		}else{
-			pa=ns['preguntas_mitos'][getRandomInt(0, 14)];
+			pa=ns['preguntas_mitos'][getRandomInt(0, 7)];
 		}
 		if(!inArray(pa,ns.preguntas)){
 			ns.preguntas.push(pa);
